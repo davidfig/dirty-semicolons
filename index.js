@@ -27,7 +27,7 @@ module.exports = function(file, output, callback)
         function ()
         {
             const filename = output || file
-            fs.writeFileSync(filename, result)
+            fs.writeFileSync(filename, result.substr(0, result.length - 1))
             if (callback)
             {
                 callback(count)
