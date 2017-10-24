@@ -3,9 +3,10 @@
 const commander = require('commander')
 const glob = require('glob')
 const semicolons = require('.')
+const config = require('./package.json')
 
 commander
-    .version('0.0.1')
+    .version(config.version)
     .usage('[options] <file...>')
     .option('-o, --output', 'Output file (default is to overwrite original file)')
     .description('Quick and dirty semicolon remover for javascript. WARNING: does not use a real parser; please check https://github.com/davidfig/dirty-semicolons before using.')
