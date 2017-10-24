@@ -34,6 +34,16 @@ That's it.
         -o, --output   Output file (default is to overwrite original file)
         -h, --help     output usage information
 
+## API
+```
+/**
+ * remove semicolons from a file
+ * @param {string} filename
+ * @param {string} [output] filename (uses filename if not provided)
+ * @param {function} [callback] callback when complete
+ */
+module.exports = function(file, output, callback)
+```
 ## license  
 MIT License  
 (c) 2017 [YOPEY YOPEY LLC](https://yopeyopey.com/) by [David Figatner](https://twitter.com/yopey_yopey/)

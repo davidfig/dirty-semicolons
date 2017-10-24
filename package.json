@@ -10,7 +10,8 @@
   "bin": "./dirty-semicolons.js",
   "scripts": {
     "test": "cp test/animate.js test/result.js && node dirty-semicolons.js test/result.js",
-    "test2": "node dirty-semicolons.js test/result.js"
+    "test2": "node dirty-semicolons.js test/result.js",
+    "docs": "markdown-api README.md index.js"
   },
   "dependencies": {
     "commander": "^2.11.0",

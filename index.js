@@ -3,6 +3,12 @@ const readline = require('readline')
 
 const EOL = '\n'
 
+/**
+ * remove semicolons from a file
+ * @param {string} filename
+ * @param {string} [output] filename (uses filename if not provided)
+ * @param {function} [callback] callback when complete
+ */
 module.exports = function(file, output, callback)
 {
     const lineReader = readline.createInterface({ input: fs.createReadStream(file) })
