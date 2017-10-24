@@ -11,7 +11,7 @@ This is a very stupid program designed for how I write code. Read how it works b
 
 1. Read each line in a file (not each parsed javascript code line, but each "physical" line)
 2. If the line has only one semicolon then remove the semicolon
-3. If it has more than one semicolon, then do not remove it (this covers my for(;;) usage)
+3. If the line has more than one semicolon then leave all the semicolons (covers for(;;) usage) except a semicolon as the final character in a line
 4. Overwrite original file unless -o is provided
 
 That's it. 

@@ -49,6 +49,9 @@ function init(options)
         count = Debug.add('AnimateCount', opts);
     }
     setDefaults(options);
+
+    //  should remove only last semicolon
+    let test = function () { var t = 0; t += 1; console.log(t); };
 }
 
 /*

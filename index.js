@@ -21,6 +21,14 @@ module.exports = function(file, output, callback)
             line = line.replace(';', '')
             count++
         }
+        else
+        {
+            const test = line.trim()
+            if (test[test.length - 1] === ';')
+            {
+                line = line.substring(0, line.lastIndexOf(';'))
+            }
+        }
         result += line + EOL
     })
     lineReader.on('close',
