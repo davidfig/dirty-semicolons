@@ -1,6 +1,6 @@
 {
   "name": "dirty-semicolons",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Quick and stupid in-place semicolon remover for javascript. WARNING: Does not use a real parser!",
   "main": "index.js",
   "repository": "git@github.com:davidfig/dirty-semicolons.git",
